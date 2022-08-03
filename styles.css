@@ -1,0 +1,172 @@
+:root {
+  --primary-dark: #333;
+  --primary-light: #ededed;
+  --secondary-light: #de6262;
+}
+
+
+body{
+    background-image :linear-gradient(to right,#de6262,#ffb88c );
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+    color: var(--primary-dark);
+    font-style: italic;
+}
+.main{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.title{
+    font-size: 70px;
+    font-family: 'Cabin Sketch', cursive;
+    color: #ffffff;
+    justify-self: center;
+}
+#settings{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 200px;
+
+    
+}
+.btn{
+    padding: 10px 20px;
+    border: 1px solid var(--primary-dark);
+    border-radius: 5px;
+    width: 140px;
+    height: 50px;
+    color: inherit;
+    background-color: transparent;
+    transition: transform 0.1 ease-in-out;
+}
+.btn:hover{
+    transform: scale(1.05);
+    background-color: var(--secondary-light);
+    background-image: linear-gradient(to right,#de6262,#ffb88c );
+}
+.btn:active{
+    background-color: var(--primary-dark);
+    color: var(--primary-light);
+}
+.active{
+    background-image: linear-gradient(to right,#de6262,#ffb88c );
+}
+#color-picker{
+    display: none;
+}
+.color-picker-span{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px; 
+    background-color:white;
+    display:inline-block;
+}
+#sketch{
+    background-image :linear-gradient(to right,#ffafbd , #ffc3a0 );
+    display: grid;
+    width: 501px;
+    height: 500px;
+    padding: 10px;
+    border-radius:10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+
+
+}
+#border-hide{
+    width: 15px;
+    height: 15px;
+}
+.grid-element{
+    background-color:white !important;
+    width: auto;
+    height: auto;
+    border: solid 1px;
+    border-color: aliceblue;
+}
+.grid-hide-borders{
+    border: none !important;
+    
+}
+.copywrite{
+    color:aliceblue;
+}
+
+.footer{
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;   
+    position: absolute;
+
+}
+
+.fa-github {
+  color: var(--primary-dark);
+  font-size: 24px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.fa-github:hover {
+  transform: rotate(360deg) scale(1.2);
+}
+
+@media (max-width: 1200px) {
+  .main {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 850px) {
+  .main {
+    gap: 50px;
+  }
+
+  #settings {
+    width: 150px;
+    gap: 16px;
+  }
+
+  #sizeSlider {
+    margin-bottom: -4px;
+  }
+
+  #sketch {
+    width: 401px;
+    height: 400px;
+  }
+
+}
+
+@media (max-width: 650px) {
+  .title {
+    font-size: 50px;
+  }
+
+  .main {
+    flex-direction: column;
+  }
+
+  #sketch {
+    width: 300px;
+    height: 300px;
+  }
+}

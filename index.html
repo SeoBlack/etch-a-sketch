@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/fb28803269.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>    
+<title>Etch-a-sketch</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="title">Etch-a-sketch</h1>
+    </header>
+    <main class="main">
+        <div id="sketch">
+                
+        </div>
+        <div id="settings">
+            <span class="color-picker-span"><input id= "color-picker" type="color" class="btn"></span>
+            <button class="btn" id="paint">Color Mode</button>
+            <button class="btn" id="rainbow">Rainbow mode</button>
+            <button class="btn" id="erase">Eraser</button>
+            <button class="btn" id="clear">Clear</button>
+            <p><input type="checkbox" id="border-hide" value="true"> Hide borders</p>
+            <div class="range-picker">
+                <p class="size-paragraph"></p>
+                <input type="range" id="sizeSlider" value="16" min="1" max="64">
+            </div>
+            
+        </div>
+    </main>
+    <footer class="footer">
+        <p class="copywrite">This project is part of  <a href="https://www.theodinproject.com/">The Odin Project </a>Curriculum <a href="https://github.com/SeoBlack"><i class="fa-brands fa-github"></i></a></p>
+    </footer>
+</body>
+</html>
